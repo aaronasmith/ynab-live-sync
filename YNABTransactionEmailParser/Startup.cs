@@ -9,6 +9,7 @@ namespace YNABTransactionEmailParser
     {
         public override void ConfigureServices(WebHostBuilderContext context, IServiceCollection services)
         {
+            services.AddTransient<YNABClient>();
             services.AddHttpClient<YNABClient>((services, cfg) => {
                 var configuration = services.GetService<IConfiguration>();
 
