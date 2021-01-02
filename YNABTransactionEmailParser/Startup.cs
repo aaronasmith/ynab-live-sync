@@ -9,7 +9,7 @@ namespace YNABTransactionEmailParser
     {
         public override void ConfigureServices(WebHostBuilderContext context, IServiceCollection services)
         {
-            services.AddHttpClient<Function>((services, cfg) => {
+            services.AddHttpClient<YNABClient>((services, cfg) => {
                 var configuration = services.GetService<IConfiguration>();
 
                 cfg.BaseAddress = new System.Uri($"https://api.youneedabudget.com/v1/budgets/{configuration.GetValue<string>("YNABBudgetId")}/");
