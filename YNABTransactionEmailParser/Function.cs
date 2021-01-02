@@ -1,5 +1,6 @@
 using Google.Cloud.Functions.Framework;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
@@ -13,9 +14,13 @@ namespace YNABTransactionEmailParser
     public class Function : IHttpFunction
     {
         private readonly ILogger _logger;
+        private readonly IConfiguration _configuration;
 
-        public Function(ILogger<Function> logger) =>
+        public Function(ILogger<Function> logger, IConfiguration configuration)
+        {
             _logger = logger;
+            _configuration = configuration;
+        }
 
         public async Task HandleAsync(HttpContext context)
         {
@@ -23,7 +28,7 @@ namespace YNABTransactionEmailParser
             string apikey = request.Query["key"];
             string bank = request.Query["bank"];
 
-            if(apikey != ""){
+            if(apikey != _configuration.GetValue<string>("authenticationKey")){
                 _logger.LogError("Invalid api key submitted");
                 context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
                 return;
