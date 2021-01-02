@@ -48,7 +48,7 @@ namespace YNABTransactionEmailParser
                 transaction = new Domain.YNAB.Transaction {
                     account_id = accountId,
                     date = localTransaction.Date.ToString("yyyy-MM-dd"),
-                    amount = (int)(localTransaction.Amount * 1000),
+                    amount = (int)(localTransaction.Amount * -1000),
                     payee_name = localTransaction.Payee,
                     cleared = "uncleared"
                 }
