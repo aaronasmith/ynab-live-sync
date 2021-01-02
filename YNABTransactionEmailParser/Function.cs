@@ -5,9 +5,11 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
 using System.Net;
+using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using YNABTransactionEmailParser.Domain.Email;
+using YNABTransactionEmailParser.Domain.YNAB;
 
 namespace YNABTransactionEmailParser
 {
@@ -15,9 +17,11 @@ namespace YNABTransactionEmailParser
     {
         private readonly ILogger _logger;
         private readonly IConfiguration _configuration;
+        private readonly YNABClient _ynabClient;
 
-        public Function(ILogger<Function> logger, IConfiguration configuration)
+        public Function(ILogger<Function> logger, IConfiguration configuration, YNABClient ynabClient)
         {
+            _ynabClient = ynabClient;
             _logger = logger;
             _configuration = configuration;
         }
@@ -28,7 +32,8 @@ namespace YNABTransactionEmailParser
             string apikey = request.Query["key"];
             string bank = request.Query["bank"];
 
-            if(apikey != _configuration.GetValue<string>("authenticationKey")){
+            if (apikey != _configuration.GetValue<string>("authenticationKey"))
+            {
                 _logger.LogError("Invalid api key submitted");
                 context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
                 return;
@@ -42,25 +47,30 @@ namespace YNABTransactionEmailParser
                 try
                 {
                     var email = JsonSerializer.Deserialize<EmailMessage>(text);
-                    IParser parser = bank switch {
+                    IParser parser = bank switch
+                    {
                         "chase" => new ChaseParser(),
                         _ => null
                     };
 
-                    if(parser == null){
+                    if (parser == null)
+                    {
                         _logger.LogError("Invalid bank submitted");
                         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                         return;
                     }
 
                     var transaction = parser.ParseEmail(email.plain);
-                    if(transaction == null){
-                        _logger.LogError("Parse did not succeed for content: \"{content}\"", email.plain);                        
+                    if (transaction == null)
+                    {
+                        _logger.LogError("Parse did not succeed for content: \"{content}\"", email.plain);
                         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                         return;
                     }
 
                     _logger.LogInformation("Parsing complete: {Amount}, {Date}, {Last4}, {Payee}", transaction.Amount, transaction.Date, transaction.Last4, transaction.Payee);
+
+                    await _ynabClient.PostTransaction(transaction);
                 }
                 catch (Exception exception)
                 {
