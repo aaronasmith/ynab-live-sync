@@ -1,4 +1,5 @@
 using Google.Cloud.Functions.Framework;
+using Google.Cloud.Functions.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -9,10 +10,10 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using YNABTransactionEmailParser.Domain.Email;
-using YNABTransactionEmailParser.Domain.YNAB;
 
 namespace YNABTransactionEmailParser
 {
+    [FunctionsStartup(typeof(Startup))]
     public class Function : IHttpFunction
     {
         private readonly ILogger _logger;
