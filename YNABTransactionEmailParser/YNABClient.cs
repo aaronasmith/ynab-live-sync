@@ -30,24 +30,31 @@ namespace YNABTransactionEmailParser
             return account?.Id;
         }
 
-        internal async Task PostTransaction(Transaction transaction)
+        internal async Task PostTransaction(Transaction localTransaction)
         {
-            var accountId = await GetAccountId(transaction.Last4);
+            var accountId = await GetAccountId(localTransaction.Last4);
             if (accountId == null)
             {
-                throw new Exception($"No account found for {transaction.Last4}");
+                throw new Exception($"No account found for {localTransaction.Last4}");
             }
             _logger.LogInformation("Found account: {id}", accountId);
-            await _httpClient.PostAsJsonAsync("transactions", new AddTransactionRequest
+
+            _logger.LogDebug("Date: {date}", localTransaction?.Date);
+            _logger.LogDebug("Amount: {amount}", localTransaction?.Amount);
+            _logger.LogDebug("Payee: {payee_name}", localTransaction?.Payee);
+
+            var request = new AddTransactionRequest
             {
                 transaction = new Domain.YNAB.Transaction {
                     account_id = accountId,
-                    date = transaction.Date.ToString("yyyy-MM-dd"),
-                    amount = (int)(transaction.Amount * 1000),
-                    payee_name = transaction.Payee,
+                    date = localTransaction.Date.ToString("yyyy-MM-dd"),
+                    amount = (int)(localTransaction.Amount * 1000),
+                    payee_name = localTransaction.Payee,
                     cleared = "uncleared"
                 }
-            });
+            };
+
+            await _httpClient.PostAsJsonAsync("transactions", request);
         }
     }
 }
