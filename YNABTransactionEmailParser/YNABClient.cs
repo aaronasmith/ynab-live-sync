@@ -21,8 +21,8 @@ namespace YNABTransactionEmailParser
                 throw new System.Exception($"Error retrieving accounts: {error.Error.Detail}");
             }
             response.EnsureSuccessStatusCode();
-            var account = (await response.Content.ReadAsAsync<GetAccountsResponse>()).Data.Accounts.FirstOrDefault(a => a.Note.Contains(last4Digits));
-            return account.Id;
+            var account = (await response.Content.ReadAsAsync<GetAccountsResponse>())?.Data.Accounts.FirstOrDefault(a => a.Note?.Contains(last4Digits) ?? false);
+            return account?.Id;
         }
 
         internal async Task PostTransaction(Transaction transaction)
