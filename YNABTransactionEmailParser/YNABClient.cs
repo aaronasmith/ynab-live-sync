@@ -40,7 +40,7 @@ namespace YNABTransactionEmailParser
             _logger.LogInformation("Found account: {id}", accountId);
             await _httpClient.PostAsJsonAsync("transactions", new AddTransactionRequest
             {
-                transaction = {
+                transaction = new Domain.YNAB.Transaction {
                     account_id = accountId,
                     date = transaction.Date.ToString("yyyy-MM-dd"),
                     amount = (int)(transaction.Amount * 1000),
