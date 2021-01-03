@@ -3,7 +3,7 @@ using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
 using Xunit;
-using YNABTransactionEmailParser;
+using YNABTransactionEmailParser.Parsers;
 
 public class ChaseParserTests{
     private readonly ChaseParser parser;

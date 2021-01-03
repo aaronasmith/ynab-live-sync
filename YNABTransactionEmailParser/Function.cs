@@ -20,10 +20,12 @@ namespace YNABTransactionEmailParser
         private readonly ILogger _logger;
         private readonly IConfiguration _configuration;
         private readonly YNABClient _ynabClient;
+        private readonly Func<string, IParser> _parserFactory;
 
-        public Function(ILogger<Function> logger, IConfiguration configuration, YNABClient ynabClient)
+        public Function(ILogger<Function> logger, IConfiguration configuration, YNABClient ynabClient, Func<string, IParser> parserFactory)
         {
             _ynabClient = ynabClient;
+            _parserFactory = parserFactory;
             _logger = logger;
             _configuration = configuration;
         }
@@ -53,12 +55,7 @@ namespace YNABTransactionEmailParser
                     string mailBody = email.plain ?? email.html;
                     _logger.LogInformation("Mail Body: {mailBody}", mailBody);
 
-                    IParser parser = bank switch
-                    {
-                        "chase" => new ChaseParser(),
-                        "usbank" => new UsBankParser(),
-                        _ => null
-                    };
+                    IParser parser = _parserFactory(bank);
 
                     if (parser == null)
                     {

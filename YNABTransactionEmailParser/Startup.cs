@@ -1,7 +1,9 @@
+using System;
 using Google.Cloud.Functions.Hosting;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using YNABTransactionEmailParser.Parsers;
 
 namespace YNABTransactionEmailParser
 {
@@ -16,6 +18,20 @@ namespace YNABTransactionEmailParser
                 cfg.BaseAddress = new System.Uri($"https://api.youneedabudget.com/v1/budgets/{configuration.GetValue<string>("YNABBudgetId")}/");
                 cfg.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", configuration.GetValue<string>("YNABPersonalAccessToken"));
             });
+
+            services.AddSingleton<ChaseParser>();
+            services.AddSingleton<UsBankParser>();
+            services.AddSingleton<RedCardParser>();
+
+            services.AddSingleton<Func<string, IParser>>(services => (bank) => 
+                bank switch
+                {
+                    "chase" => services.GetService<ChaseParser>(),
+                    "usbank" => services.GetService<UsBankParser>(),
+                    "target" => services.GetService<RedCardParser>(),
+                    _ => null
+                }
+            );
             base.ConfigureServices(context, services);
         }
     }

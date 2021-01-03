@@ -13,7 +13,8 @@
     <ProjectReference Include="..\YNABTransactionEmailParser\YNABTransactionEmailParser.csproj"/>
   </ItemGroup>
   <ItemGroup>
-    <None Update="ChaseEmail.txt" CopyToOutputDirectory="PreserveNewest"/>    
+    <None Update="ChaseEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
     <None Update="UsBankEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
+    <None Update="RedCardEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>
 </Project>

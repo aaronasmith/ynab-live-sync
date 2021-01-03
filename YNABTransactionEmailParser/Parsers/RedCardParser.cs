@@ -4,10 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace YNABTransactionEmailParser.Parsers
 {
-
-    public class ChaseParser : IParser
+    public class RedCardParser : IParser
     {
-        private static Regex regex = new Regex(@"account\s+ending\s+in\s+(?<LastFour>\d+)\..*A\s+charge\s+of\s+\(\$USD\)\s+(?<Amount>[\d\.]+)\s+at\s+(?<Payee>.*?)\s+has.*?on\s+(?<Date>[^\.]+)\..*", RegexOptions.Singleline);
+        private static Regex regex = new Regex(@"Date:\s*(?<Date>.*(AM|PM)).*ending\s+in\s+(?<LastFour>\d+).*transaction\s+of\s+\$(?<Amount>[\d\.]*)\s+at\s+(?<Payee>.+?)\s+was\s+recently\s+.*", RegexOptions.Singleline);
 
         public Transaction ParseEmail(string contents)
         {
@@ -17,7 +16,7 @@ namespace YNABTransactionEmailParser.Parsers
             return new Transaction
             {
                 Amount = decimal.Parse(match.Groups["Amount"]?.Value),
-                Date = DateTime.ParseExact(match.Groups["Date"].Value, "MMM d, yyyy \"at\" h:mm tt \"ET\"", CultureInfo.CurrentCulture),
+                Date = DateTime.ParseExact(match.Groups["Date"].Value, "ddd, MMM d, yyyy \"at\" h:mm tt", CultureInfo.CurrentCulture),
                 Last4 = match.Groups["LastFour"].Value,
                 Payee = match.Groups["Payee"].Value
             };
