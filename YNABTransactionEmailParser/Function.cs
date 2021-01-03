@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using YNABTransactionEmailParser.Domain.Email;
+using YNABTransactionEmailParser.Parsers;
 
 namespace YNABTransactionEmailParser
 {
@@ -48,9 +49,14 @@ namespace YNABTransactionEmailParser
                 try
                 {
                     var email = JsonSerializer.Deserialize<EmailMessage>(text);
+
+                    string mailBody = email.plain ?? email.html;
+                    _logger.LogInformation("Mail Body: {mailBody}", mailBody);
+
                     IParser parser = bank switch
                     {
                         "chase" => new ChaseParser(),
+                        "usbank" => new UsBankParser(),
                         _ => null
                     };
 
@@ -61,10 +67,10 @@ namespace YNABTransactionEmailParser
                         return;
                     }
 
-                    var transaction = parser.ParseEmail(email.plain);
+                    var transaction = parser.ParseEmail(mailBody);
                     if (transaction == null)
                     {
-                        _logger.LogError("Parse did not succeed for content: \"{content}\"", email.plain);
+                        _logger.LogError("Parse did not succeed for content: \"{content}\"", mailBody);
                         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                         return;
                     }
@@ -76,8 +82,6 @@ namespace YNABTransactionEmailParser
                 catch (Exception exception)
                 {
                     _logger.LogError(exception, "Error parsing JSON request");
-                    _logger.LogError(exception.Message);
-                    _logger.LogError(exception.StackTrace);
                     context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                     return;
                 }
