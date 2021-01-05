@@ -50,7 +50,8 @@ namespace YNABTransactionEmailParser
                     date = localTransaction.Date.ToString("yyyy-MM-dd"),
                     amount = (int)(localTransaction.Amount * -1000),
                     payee_name = localTransaction.Payee,
-                    cleared = "uncleared"
+                    cleared = "uncleared",
+                    memo = "Instant Sync",
                 }
             };
 
