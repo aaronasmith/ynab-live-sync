@@ -70,6 +70,10 @@ namespace YNABTransactionEmailParser
                         _logger.LogError("Parse did not succeed for content: \"{content}\"", mailBody);
                         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                         return;
+                    } else if (transaction.IgnoreTransaction) {
+                        _logger.LogInformation("Ignoring transaction");
+                        context.Response.StatusCode = (int)HttpStatusCode.OK;
+                        return;
                     }
 
                     _logger.LogInformation("Parsing complete: {Amount}, {Date}, {Last4}, {Payee}", transaction.Amount, transaction.Date, transaction.Last4, transaction.Payee);
