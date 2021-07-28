@@ -16,10 +16,11 @@ public class ChaseParserTests{
     public void ParsesEmailCorrectly(){
         var transaction = parser.ParseEmail(File.ReadAllText("ChaseEmail.txt"));
 
+        transaction.Should().NotBeNull();
         transaction.Last4.Should().Be("1769");
         transaction.Payee.Should().Be("WALMART.COM");
         transaction.Amount.Should().Be(12.41m);
-        transaction.Date.Should().BeSameDateAs(new System.DateTime(2021, 1, 1));
+        transaction.Date.Should().BeSameDateAs(new System.DateTime(2021, 7, 21, 13, 18, 0));
     }
 
     [Fact]
