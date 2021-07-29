@@ -12,6 +12,10 @@ namespace YNABTransactionEmailParser.Parsers
     {
         public Transaction ParseEmail(string contents)
         {
+            if(contents.Contains("Thank you for activating Account Alerts.")){
+                return null;
+            }
+        
             var doc = new HtmlDocument();
             doc.LoadHtml(contents);
 
