@@ -16,5 +16,7 @@
     <None Update="ChaseEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
     <None Update="UsBankEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
     <None Update="RedCardEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
+    <None Update="BankOfAmericaAuthorizationEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
+    <None Update="BankOfAmericaCreditCardTransactionEmail.txt" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>
 </Project>

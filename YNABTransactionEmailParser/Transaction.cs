@@ -7,5 +7,6 @@ namespace YNABTransactionEmailParser
         public decimal Amount {get;set;}
         public string Payee {get;set;}
         public DateTime Date {get;set;}
+        public bool IgnoreTransaction {get;set;}
     }
 }

@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+   <head>
+      <meta charset="utf-8" >
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+      <style type="text/css" > /* CLIENT-SPECIFIC STYLES */ #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */ .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */ body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */ table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */ img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */ /* RESET STYLES */ body{margin:0; padding:0;} img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;} table{border-collapse:collapse !important;} body{height:100% !important; margin:0; padding:0; width:100% !important;} /* iOS BLUE LINKS */ .appleBody a {color:#68440a; text-decoration: none;} .appleFooter a {color:#999999; text-decoration: none;} ReadMsgBody{ width: 100%;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important; padding:0 !important;} p { margin: 1em 0;} table td { border-collapse: collapse;} img {outline:0;} a img {border:none;} p {margin: 1em 0;} @-ms-viewport{ width: device-width;} a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important; font-weight: inherit !important;line-height: inherit !important;} @media only screen and (max-width: 480px) { body[yahoo] .tbContainer { width:100% !important; } body[yahoo] .tdMobHeaderImage { padding-top:30px !important;padding-bottom:0px !important; } body[yahoo] .imgMobSize163x21 { max-width:163px !important; max-height:21px !important;} body[yahoo] .BofA_2019_228x23 { max-width:228px !important; max-height:23px !important; padding-left:84px; padding-right:64px} body[yahoo] .imgMobSize70x70 { width:70px !important; height:70px !important;} body[yahoo] .tdMobAlertImage { padding-top:30px !important;padding-bottom:10px !important; } body[yahoo] .tdMobZ1tbl { max-width:335px !important; display: block !important;} body[yahoo] .tdMobTitle { display: block !important;font-size:28px !important;padding-bottom:20px !important;} body[yahoo] .tdMobZ1BottomPadding30px { display: block !important;font-size:28px !important;padding-bottom:30px !important;padding-left:50px !important;padding-right:50px !important} body[yahoo] .tdMobZ1Row1 { width:335px !important;display: block !important;font-size:28px !important;padding-bottom:0px !important; text-align:center !important;} body[yahoo] .tdMobZ1Row2 { width:335px !important;display: block !important;font-size:28px !important;padding-bottom:30px !important; text-align:center !important;} body[yahoo] .tdMobContentZ2Font { display: block !important;font-size:18px !important;} body[yahoo] .tdMobTitleDetails { display: block !important;font-size:18px !important; padding-bottom:30px !important;} body[yahoo] .tblMobZ4 { width:335px !important;text-align:center !important;align:center !important;} body[yahoo] .tdMobContentZ4 { display: block !important;font-size:13px !important;max-width:335px !important;padding-top:20px !important;padding-bottom:40px !important;} body[yahoo] .tdMobContentZ4BottomPadding0px { display: block !important;font-size:13px !important;max-width:335px !important;padding-top:20px !important;padding-bottom:0px !important;} body[yahoo] .tblMobBrandingZ5 { display: block !important; width:335px !important;text-align:center !important;align:center !important;padding-bottom:0px !important;} body[yahoo] .imgMobBrandingZ5img { width:158px !important;height:14px !important;align:center !important;padding-bottom:40px !important;} body[yahoo] .tblMobFootnoteZ7 { display: block !important; max-width:335px !important;text-align:center !important;align:center !important;} body[yahoo] .tdMobFootnoteZ7 { padding-top:20px !important;max-width:335px !important;font-size:11px !important;} body[yahoo] .tdMobFooter { font-size:11px !important;line-height:13px !important;} body[yahoo] .tdMobFooterFont { font-size:11px !important;} body[yahoo] .tdMobFooterText { font-size:11px !important;padding-bottom:20px !important;} body[yahoo] .tdMobFooterLink { font-size:11px !important;padding-bottom:15px !important;} body[yahoo] .tdMobZ6 { display: block !important; width:100% !important;text-align:center !important;align:center !important; float:center !important;} body[yahoo] .tblMobContainerTableZ6 { width:100% !important; text-align:center !important;align:center !important;} body[yahoo] .tdMobTopPadding40px { padding-top:40px !important;} body[yahoo] .tdMobContainerZ6imgDetails { width:80px !important; } body[yahoo] .imgMobContainerZ6 { width:60px !important; height:60px !important;} body[yahoo] .tdMobContainerZ6title { width:100% !important; max-width:100% !important;padding-left:10px !important; } body[yahoo] .tdMobContainerZ6description1 { width:100% !important; max-width:100% !important; } body[yahoo] .tdMobContainerZ6description2 { width:100% !important; max-width:100% !important; } body[yahoo] .tdMobZ3 { width:335px !important; max-width:100% !important; } body[yahoo] .tdMobButtonZ3 { font-size:20px !important; line-height:45px !important; width:320px !important; border-left:0px solid #0052C2 !important; border-right:0px solid #0052C2 !important; border-top:0px solid #0052C2 !important; border-bottom:0px solid #0052C2 !important; text-align:center !important; align:center !important;} body[yahoo] .imgDeskDisp { display:none !important; } body[yahoo] .tdMobZ2Content { display: block !important;font-size:18px !important;line-height:21px !important;} body[yahoo] .tdMobZ2Padding27px { display: block !important;font-size:18px !important;line-height:21px !important;padding-bottom:27px !important;} body[yahoo] .tdMobAlertImagebottom30px { max-width:335px !important; display: block !important; padding-top:30px !important;padding-bottom:30px !important; text-align:center !important; } body[yahoo] .tdMobTitlebottom30px { display: block !important;font-size:28px !important;padding-bottom:30px !important;} body[yahoo] .tdMobz1width { font-size:20px !important; height:30px !important; width:320px !important; border-left:0px solid #FFFFFF !important; border-right:0px solid #FFFFFF !important; border-top:0px solid #FFFFFF !important; border-bottom:0px solid #FFFFFF !important; text-align:center !important; align:center !important;} body[yahoo] .footer-class { padding-left:45px !important; padding-right:45px !important;} body[yahoo] .tdMobFooter1 { font-size:11px !important;} body[yahoo] .tdMobFooter2 { font-size:11px !important;line-height:16px !important;} body[yahoo] .tdMobFooterWidth { max-width:335px !important; display: block !important;} } @media only screen and (max-width: 640px) { body[yahoo] .tbContainer { width:100% !important; } } @media only screen and (min-width: 481px) { body[yahoo] .imgMobDisp { display:none !important; } } </style>
+   </head>
+   <body bgcolor="#ffffff" text="#000000" style="background-color: #FFFFFF; color: #000000; margin: 0px; padding:0px; -webkit-text-size-adjust:none;" yahoo="fix" >
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" >
+         <tr>
+            <td align="center" >
+               <table cellspacing="0" cellpadding="0" border="0" width="600" class="tbContainer" align="center" >
+                  <tr>
+                     <td>
+                        <table cellspacing="0" cellpadding="0" border="0" bordercolor="#000000" bgcolor="#ffffff" width="100%" >
+                           <!-- Zone 00 - Bofa Image Header - Begins --> 
+                           <tr>
+                              <td align="center" valign="top" >
+                                 <table cellpadding="0" cellspacing="0" border="0" mcdisabled-bordercolor="" width="100%" mcdisabled-bgcolor="" >
+                                    <tr>
+                                       <td valign="top" align="center" >
+                                          <table width="100%" bgcolor="#ffffff" border="0" mcdisabled-bordercolor="" cellpadding="0" cellspacing="0" >
+                                             <tr>
+                                                <td class="tdMobHeaderImage" style="text-align:center;padding-top:30px;padding-bottom:0px;padding-left:10px;margin:0px;valign:top;" > <img class="BofA_2019_228x23" id="image-top-bofa" src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/BofA_2019_307x31.png" border="0" alt="Bank of America." height="31px" width="307px" > </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <!-- Zone 00 - Bofa Image Header - Ends--> 
+                           <tr>
+                              <td align="center" valign="top" >
+                                 <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                       <table class="tdMobZ1tbl" align="center" width="500" bgcolor="#ffffff" border="0" bordercolor="" cellpadding="0" cellspacing="0">
+                                          <!-- Zone1 - Begins--> 
+                                          <tr>
+                                             <td class="tdMobAlertImagebottom30px" style="text-align:center;padding-top:40px;padding-bottom:40px;margin:0px;valign:top;"> <img class="imgMobSize70x70" id="image-Zone1" src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/alerts/desktop_icon_code.png" border="0" alt="AuthCode" height="105px" width="105px"/> </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="tdMobZ1Row1" valign="top" align="top" style="font-size:36px; font-family: Connections, arial; color:#000000; padding-bottom:0px; float:center; text-align:center; valign:top;"> Here's the code </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="tdMobZ1Row2" valign="top" align="top" style="font-size:36px; font-family: Connections, arial; color:#000000;padding-bottom:40px; float:center; text-align:center; valign:top;"> you asked for </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="tdMobZ1Row1" valign="top" align="top" style="font-size:36px; font-family: Connections, arial; font-weight: bold; letter-spacing : 10px; color:#000000;padding-left:0px; padding-right:0px; padding-bottom:0px; float:center; text-align:center;valign:top; text-decoration: none;"> 123456 </td>
+                                          </tr>
+                                          <!-- Zone1 - Ends--> <!-- fix - CTA Button - Begins--> 
+                                          <tr>
+                                             <td>
+                                                <table class="tdMobZ1tbl" align="center" width="500">
+                                                   <tr>
+                                                      <td class="tdMobz1width" align="center">
+                                                         <!--[if mso]> 
+                                                         <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:480px;cursor:default;" stroke="f" fillcolor="#ffffff">
+                                                            <w:anchorlock/>
+                                                            <center>
+                                                               <![endif]--> <span style="cursor:default;background-color:#ffffff;color:#ffffff;display:inline-block;font-family:Connections, arial; font-size:22px;font-weight:regular; height:40px;text-align:center;text-decoration:none;width:480px;-webkit-text-size-adjust:none;"/> <!--[if mso]> 
+                                                            </center>
+                                                         </v:rect>
+                                                         <![endif]--> 
+                                                      </td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                          <!-- fix - CTA Button - Ends--> <!-- Zone2 - Begins--> 
+                                          <tr>
+                                             <table align="center" width="100%" bgcolor="#ffffff" border="0" bordercolor="" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                   <td class="tdMobZ2Content" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; float:center; text-align:center; valign:top;"> Don't share this code with anyone &mdash; </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="tdMobZ2Padding27px" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; float:center; text-align:center; valign:top; padding-bottom:45px;"> we won't call to ask for it. </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="tdMobZ2Content" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; padding-bottom: 0px; float:center; text-align:center; valign:top;"> If you didn't make this request, </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="tdMobZ2Content" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; padding-bottom: 10px; float:center; text-align:center; valign:top;"> call us right away at <span style="color:#0052C2;text-decoration: none;">800.933.6262</span><span style="color:#000000;">.</span> </td>
+                                                </tr>
+                                             </table>
+                                          </tr>
+                                          <!-- Zone2 - Ends--> 
+                                       </table>
+                                    </tr>
+                                    <!-- Zone 8 - footer - Begins --> 
+                                    <tr>
+                                       <td class="footer-class" style="padding-top:40px; padding-left:55px; padding-right:55px;">
+                                          <table align="center" border="0" width="100%">
+                                             <tr>
+                                                <td class="tdMobFooter" width="" valign="bottom" align="top" style="font-size:13px; font-family: Connections Light, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:20px; padding-top:0px; line-height:18px;float:center; text-align:center; valign:top;"> We'll never ask for your personal information such as SSN or ATM PIN in email messages. If you get an email that looks suspicious or you are not the intended recipient of this email, don't click on any links. Instead, forward to <a href="#" style="pointer-events: none; cursor: default;color: #666666; text-decoration: none;">abuse@bankofamerica.com</a> then delete it. </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="tdMobFooter1" width="" valign="bottom" align="top" style="font-size:13px; font-family: Connections Light, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:20px; padding-top:0px; float:center; text-align:center; valign:top;"> Please don't reply to this automatically generated service email. </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <table align="center" border="0">
+                                                      <tr>
+                                                         <td class="tdMobFooter" style="font-family: Connections, arial; font-weight:lighter; text-align:left; font-size:13px; color:#0052C2; padding-bottom:15px; line-height:18px; padding-left:20px; padding-right:20px;"> <a href="https://www.bankofamerica.com/privacy/consumer-privacy-notice.go" name="privacy_notice" style="text-decoration:none;color:#0052C2">Privacy Notice</a><span style="color:#000000;"></span> </td>
+                                                         <td class="tdMobFooter" style="font-family: Connections, arial; font-weight:lighter; text-align:left; font-size:13px; color:#0052C2; padding-bottom:15px; line-height:18px; padding-left:20px; padding-right:20px;"> <a href="https://www.bankofamerica.com/help/equalhousing.cfm" name="equal_housing_lender" style="text-decoration:none;color:#0052C2">Equal Housing Lender <img src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/alerts/desktop_icon_equalhousing.png" style="border:none"></a><br> </td>
+                                                      </tr>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <table width="300" align="center" border="0">
+                                                      <tr>
+                                                         <td class="tdMobFooter2" width="" valign="bottom" align="top" style="line-height:16px; font-size:13px; font-family: Connections Light, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:0px; padding-top:0px; float:center; text-align:center; valign:top;"> Bank of America, N.A. Member FDIC </td>
+                                                      </tr>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <table width="300" align="center" border="0">
+                                                      <tr>
+                                                         <td class="tdMobFooter2" width="" valign="bottom" align="top" style="line-height:16px; font-size:13px; font-family: Connections, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:20px; padding-top:0px; float:center; text-align:center; valign:top;"> &copy; 2021 Bank of America Corporation </td>
+                                                      </tr>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                    <!-- Zone 8 - footer - Ends --> 
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <img src="http://click.ealerts.bankofamerica.com/open.aspx?ffcb10-fe991671776c067b74-fe241d7571660c7f771077-fefc1373726604-ff941679-fdf31577706d0c7a76157076-fe841773736d01747d" width="1" height="1"> 
+   </body>
+</html>
+Mail Body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+   <head>
+      <meta charset="utf-8" >
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+      <style type="text/css" > /* CLIENT-SPECIFIC STYLES */ #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */ .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */ body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */ table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */ img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */ /* RESET STYLES */ body{margin:0; padding:0;} img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;} table{border-collapse:collapse !important;} body{height:100% !important; margin:0; padding:0; width:100% !important;} /* iOS BLUE LINKS */ .appleBody a {color:#68440a; text-decoration: none;} .appleFooter a {color:#999999; text-decoration: none;} ReadMsgBody{ width: 100%;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important; padding:0 !important;} p { margin: 1em 0;} table td { border-collapse: collapse;} img {outline:0;} a img {border:none;} p {margin: 1em 0;} @-ms-viewport{ width: device-width;} a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important; font-weight: inherit !important;line-height: inherit !important;} @media only screen and (max-width: 480px) { body[yahoo] .tbContainer { width:100% !important; } body[yahoo] .tdMobHeaderImage { padding-top:30px !important;padding-bottom:0px !important; } body[yahoo] .imgMobSize163x21 { max-width:163px !important; max-height:21px !important;} body[yahoo] .BofA_2019_228x23 { max-width:228px !important; max-height:23px !important; padding-left:84px; padding-right:64px} body[yahoo] .imgMobSize70x70 { width:70px !important; height:70px !important;} body[yahoo] .tdMobAlertImage { padding-top:30px !important;padding-bottom:10px !important; } body[yahoo] .tdMobZ1tbl { max-width:335px !important; display: block !important;} body[yahoo] .tdMobTitle { display: block !important;font-size:28px !important;padding-bottom:20px !important;} body[yahoo] .tdMobZ1BottomPadding30px { display: block !important;font-size:28px !important;padding-bottom:30px !important;padding-left:50px !important;padding-right:50px !important} body[yahoo] .tdMobZ1Row1 { width:335px !important;display: block !important;font-size:28px !important;padding-bottom:0px !important; text-align:center !important;} body[yahoo] .tdMobZ1Row2 { width:335px !important;display: block !important;font-size:28px !important;padding-bottom:30px !important; text-align:center !important;} body[yahoo] .tdMobContentZ2Font { display: block !important;font-size:18px !important;} body[yahoo] .tdMobTitleDetails { display: block !important;font-size:18px !important; padding-bottom:30px !important;} body[yahoo] .tblMobZ4 { width:335px !important;text-align:center !important;align:center !important;} body[yahoo] .tdMobContentZ4 { display: block !important;font-size:13px !important;max-width:335px !important;padding-top:20px !important;padding-bottom:40px !important;} body[yahoo] .tdMobContentZ4BottomPadding0px { display: block !important;font-size:13px !important;max-width:335px !important;padding-top:20px !important;padding-bottom:0px !important;} body[yahoo] .tblMobBrandingZ5 { display: block !important; width:335px !important;text-align:center !important;align:center !important;padding-bottom:0px !important;} body[yahoo] .imgMobBrandingZ5img { width:158px !important;height:14px !important;align:center !important;padding-bottom:40px !important;} body[yahoo] .tblMobFootnoteZ7 { display: block !important; max-width:335px !important;text-align:center !important;align:center !important;} body[yahoo] .tdMobFootnoteZ7 { padding-top:20px !important;max-width:335px !important;font-size:11px !important;} body[yahoo] .tdMobFooter { font-size:11px !important;line-height:13px !important;} body[yahoo] .tdMobFooterFont { font-size:11px !important;} body[yahoo] .tdMobFooterText { font-size:11px !important;padding-bottom:20px !important;} body[yahoo] .tdMobFooterLink { font-size:11px !important;padding-bottom:15px !important;} body[yahoo] .tdMobZ6 { display: block !important; width:100% !important;text-align:center !important;align:center !important; float:center !important;} body[yahoo] .tblMobContainerTableZ6 { width:100% !important; text-align:center !important;align:center !important;} body[yahoo] .tdMobTopPadding40px { padding-top:40px !important;} body[yahoo] .tdMobContainerZ6imgDetails { width:80px !important; } body[yahoo] .imgMobContainerZ6 { width:60px !important; height:60px !important;} body[yahoo] .tdMobContainerZ6title { width:100% !important; max-width:100% !important;padding-left:10px !important; } body[yahoo] .tdMobContainerZ6description1 { width:100% !important; max-width:100% !important; } body[yahoo] .tdMobContainerZ6description2 { width:100% !important; max-width:100% !important; } body[yahoo] .tdMobZ3 { width:335px !important; max-width:100% !important; } body[yahoo] .tdMobButtonZ3 { font-size:20px !important; line-height:45px !important; width:320px !important; border-left:0px solid #0052C2 !important; border-right:0px solid #0052C2 !important; border-top:0px solid #0052C2 !important; border-bottom:0px solid #0052C2 !important; text-align:center !important; align:center !important;} body[yahoo] .imgDeskDisp { display:none !important; } body[yahoo] .tdMobZ2Content { display: block !important;font-size:18px !important;line-height:21px !important;} body[yahoo] .tdMobZ2Padding27px { display: block !important;font-size:18px !important;line-height:21px !important;padding-bottom:27px !important;} body[yahoo] .tdMobAlertImagebottom30px { max-width:335px !important; display: block !important; padding-top:30px !important;padding-bottom:30px !important; text-align:center !important; } body[yahoo] .tdMobTitlebottom30px { display: block !important;font-size:28px !important;padding-bottom:30px !important;} body[yahoo] .tdMobz1width { font-size:20px !important; height:30px !important; width:320px !important; border-left:0px solid #FFFFFF !important; border-right:0px solid #FFFFFF !important; border-top:0px solid #FFFFFF !important; border-bottom:0px solid #FFFFFF !important; text-align:center !important; align:center !important;} body[yahoo] .footer-class { padding-left:45px !important; padding-right:45px !important;} body[yahoo] .tdMobFooter1 { font-size:11px !important;} body[yahoo] .tdMobFooter2 { font-size:11px !important;line-height:16px !important;} body[yahoo] .tdMobFooterWidth { max-width:335px !important; display: block !important;} } @media only screen and (max-width: 640px) { body[yahoo] .tbContainer { width:100% !important; } } @media only screen and (min-width: 481px) { body[yahoo] .imgMobDisp { display:none !important; } } </style>
+   </head>
+   <body bgcolor="#ffffff" text="#000000" style="background-color: #FFFFFF; color: #000000; margin: 0px; padding:0px; -webkit-text-size-adjust:none;" yahoo="fix" >
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" >
+         <tr>
+            <td align="center" >
+               <table cellspacing="0" cellpadding="0" border="0" width="600" class="tbContainer" align="center" >
+                  <tr>
+                     <td>
+                        <table cellspacing="0" cellpadding="0" border="0" bordercolor="#000000" bgcolor="#ffffff" width="100%" >
+                           <!-- Zone 00 - Bofa Image Header - Begins --> 
+                           <tr>
+                              <td align="center" valign="top" >
+                                 <table cellpadding="0" cellspacing="0" border="0" mcdisabled-bordercolor="" width="100%" mcdisabled-bgcolor="" >
+                                    <tr>
+                                       <td valign="top" align="center" >
+                                          <table width="100%" bgcolor="#ffffff" border="0" mcdisabled-bordercolor="" cellpadding="0" cellspacing="0" >
+                                             <tr>
+                                                <td class="tdMobHeaderImage" style="text-align:center;padding-top:30px;padding-bottom:0px;padding-left:10px;margin:0px;valign:top;" > <img class="BofA_2019_228x23" id="image-top-bofa" src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/BofA_2019_307x31.png" border="0" alt="Bank of America." height="31px" width="307px" > </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <!-- Zone 00 - Bofa Image Header - Ends--> 
+                           <tr>
+                              <td align="center" valign="top" >
+                                 <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                       <table class="tdMobZ1tbl" align="center" width="500" bgcolor="#ffffff" border="0" bordercolor="" cellpadding="0" cellspacing="0">
+                                          <!-- Zone1 - Begins--> 
+                                          <tr>
+                                             <td class="tdMobAlertImagebottom30px" style="text-align:center;padding-top:40px;padding-bottom:40px;margin:0px;valign:top;"> <img class="imgMobSize70x70" id="image-Zone1" src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/alerts/desktop_icon_code.png" border="0" alt="AuthCode" height="105px" width="105px"/> </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="tdMobZ1Row1" valign="top" align="top" style="font-size:36px; font-family: Connections, arial; color:#000000; padding-bottom:0px; float:center; text-align:center; valign:top;"> Here's the code </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="tdMobZ1Row2" valign="top" align="top" style="font-size:36px; font-family: Connections, arial; color:#000000;padding-bottom:40px; float:center; text-align:center; valign:top;"> you asked for </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="tdMobZ1Row1" valign="top" align="top" style="font-size:36px; font-family: Connections, arial; font-weight: bold; letter-spacing : 10px; color:#000000;padding-left:0px; padding-right:0px; padding-bottom:0px; float:center; text-align:center;valign:top; text-decoration: none;"> 773095 </td>
+                                          </tr>
+                                          <!-- Zone1 - Ends--> <!-- fix - CTA Button - Begins--> 
+                                          <tr>
+                                             <td>
+                                                <table class="tdMobZ1tbl" align="center" width="500">
+                                                   <tr>
+                                                      <td class="tdMobz1width" align="center">
+                                                         <!--[if mso]> 
+                                                         <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:480px;cursor:default;" stroke="f" fillcolor="#ffffff">
+                                                            <w:anchorlock/>
+                                                            <center>
+                                                               <![endif]--> <span style="cursor:default;background-color:#ffffff;color:#ffffff;display:inline-block;font-family:Connections, arial; font-size:22px;font-weight:regular; height:40px;text-align:center;text-decoration:none;width:480px;-webkit-text-size-adjust:none;"/> <!--[if mso]> 
+                                                            </center>
+                                                         </v:rect>
+                                                         <![endif]--> 
+                                                      </td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                          <!-- fix - CTA Button - Ends--> <!-- Zone2 - Begins--> 
+                                          <tr>
+                                             <table align="center" width="100%" bgcolor="#ffffff" border="0" bordercolor="" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                   <td class="tdMobZ2Content" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; float:center; text-align:center; valign:top;"> Don't share this code with anyone &mdash; </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="tdMobZ2Padding27px" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; float:center; text-align:center; valign:top; padding-bottom:45px;"> we won't call to ask for it. </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="tdMobZ2Content" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; padding-bottom: 0px; float:center; text-align:center; valign:top;"> If you didn't make this request, </td>
+                                                </tr>
+                                                <tr>
+                                                   <td class="tdMobZ2Content" valign="top" align="top" style="line-height:32px;font-size:27px; font-family: Connections, arial; color:#000000;padding-left:0px; padding-right:0px; padding-bottom: 10px; float:center; text-align:center; valign:top;"> call us right away at <span style="color:#0052C2;text-decoration: none;">800.933.6262</span><span style="color:#000000;">.</span> </td>
+                                                </tr>
+                                             </table>
+                                          </tr>
+                                          <!-- Zone2 - Ends--> 
+                                       </table>
+                                    </tr>
+                                    <!-- Zone 8 - footer - Begins --> 
+                                    <tr>
+                                       <td class="footer-class" style="padding-top:40px; padding-left:55px; padding-right:55px;">
+                                          <table align="center" border="0" width="100%">
+                                             <tr>
+                                                <td class="tdMobFooter" width="" valign="bottom" align="top" style="font-size:13px; font-family: Connections Light, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:20px; padding-top:0px; line-height:18px;float:center; text-align:center; valign:top;"> We'll never ask for your personal information such as SSN or ATM PIN in email messages. If you get an email that looks suspicious or you are not the intended recipient of this email, don't click on any links. Instead, forward to <a href="#" style="pointer-events: none; cursor: default;color: #666666; text-decoration: none;">abuse@bankofamerica.com</a> then delete it. </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="tdMobFooter1" width="" valign="bottom" align="top" style="font-size:13px; font-family: Connections Light, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:20px; padding-top:0px; float:center; text-align:center; valign:top;"> Please don't reply to this automatically generated service email. </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <table align="center" border="0">
+                                                      <tr>
+                                                         <td class="tdMobFooter" style="font-family: Connections, arial; font-weight:lighter; text-align:left; font-size:13px; color:#0052C2; padding-bottom:15px; line-height:18px; padding-left:20px; padding-right:20px;"> <a href="https://www.bankofamerica.com/privacy/consumer-privacy-notice.go" name="privacy_notice" style="text-decoration:none;color:#0052C2">Privacy Notice</a><span style="color:#000000;"></span> </td>
+                                                         <td class="tdMobFooter" style="font-family: Connections, arial; font-weight:lighter; text-align:left; font-size:13px; color:#0052C2; padding-bottom:15px; line-height:18px; padding-left:20px; padding-right:20px;"> <a href="https://www.bankofamerica.com/help/equalhousing.cfm" name="equal_housing_lender" style="text-decoration:none;color:#0052C2">Equal Housing Lender <img src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/alerts/desktop_icon_equalhousing.png" style="border:none"></a><br> </td>
+                                                      </tr>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <table width="300" align="center" border="0">
+                                                      <tr>
+                                                         <td class="tdMobFooter2" width="" valign="bottom" align="top" style="line-height:16px; font-size:13px; font-family: Connections Light, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:0px; padding-top:0px; float:center; text-align:center; valign:top;"> Bank of America, N.A. Member FDIC </td>
+                                                      </tr>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <table width="300" align="center" border="0">
+                                                      <tr>
+                                                         <td class="tdMobFooter2" width="" valign="bottom" align="top" style="line-height:16px; font-size:13px; font-family: Connections, arial; font-weight:lighter; color:#666666;padding-left:0px; padding-right:0px; padding-bottom:20px; padding-top:0px; float:center; text-align:center; valign:top;"> &copy; 2021 Bank of America Corporation </td>
+                                                      </tr>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                    <!-- Zone 8 - footer - Ends --> 
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <img src="http://click.ealerts.bankofamerica.com/open.aspx?ffcb10-fe991671776c067b74-fe241d7571660c7f771077-fefc1373726604-ff941679-fdf31577706d0c7a76157076-fe841773736d01747d" width="1" height="1"> 
+   </body>
+</html>
