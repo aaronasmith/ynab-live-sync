@@ -8,8 +8,8 @@ using YNABTransactionEmailParser.Parsers;
 public class ChaseParserTests{
     private readonly ChaseParser parser;
 
-    public ChaseParserTests(){
-        parser = new ChaseParser();
+    public ChaseParserTests(){        
+        parser = new ChaseParser(Mock.Of<ILogger<ChaseParser>>());
     }
 
     [Fact]
