@@ -19,13 +19,17 @@ namespace YNABTransactionEmailParser.Parsers
 
         public Transaction ParseEmail(string contents)
         {
+            logger.LogInformation("Parsing chase email");
             if(contents.Contains("Thank you for activating Account Alerts.")){
+                logger.LogInformation("Ignoring confirmation email");
                 return new Transaction { IgnoreTransaction = true };
             }
         
             var doc = new HtmlDocument();
+            logger.LogInformation("Loading as html document");
             doc.LoadHtml(contents);
 
+            logger.LogInformation("Getting all table cells");
             var htmlContent = doc.DocumentNode.Descendants("td").Select(y => y.InnerText).ToArray();
 
             string account = GetValue(htmlContent, "Account");
@@ -39,8 +43,8 @@ namespace YNABTransactionEmailParser.Parsers
             var rawAmount = GetValue(htmlContent, "Amount");
             decimal.TryParse(rawAmount, NumberStyles.AllowCurrencySymbol | NumberStyles.AllowDecimalPoint, CultureInfo.CurrentCulture, out var amount);
 
-            logger.LogDebug("RawAccount: {RawAccount}; RawDate: {RawDate}, RawAmount: {RawAmount}", account, rawDate, rawAmount);
-            logger.LogDebug("Last4: {Last4}; Payee: {Payee}, Date: {Date}, Amount: {Amount}", last4, payee, date, amount);
+            logger.LogInformation("RawAccount: {RawAccount}; RawDate: {RawDate}, RawAmount: {RawAmount}", account, rawDate, rawAmount);
+            logger.LogInformation("Last4: {Last4}; Payee: {Payee}, Date: {Date}, Amount: {Amount}", last4, payee, date, amount);
 
             if(last4 == null || payee == null || date == default(DateTime) || amount == default(decimal)){
                 return null;
@@ -56,7 +60,10 @@ namespace YNABTransactionEmailParser.Parsers
         }
 
         public string GetValue(IEnumerable<string> content, string value){
-            return content.SkipWhile(v => v != value).Skip(1).FirstOrDefault();
+            logger.LogInformation("Finding content for {value}", value);
+            var foundValue = content.SkipWhile(v => v != value).Skip(1).FirstOrDefault();
+            logger.LogInformation("Found {value}", foundValue);
+            return foundValue;
         }
     }
 }
