@@ -41,7 +41,7 @@ namespace YNABTransactionEmailParser.Parsers
             var payee = GetValue(htmlContent, "Merchant");
 
             var rawAmount = GetValue(htmlContent, "Amount");
-            decimal.TryParse(rawAmount, NumberStyles.AllowCurrencySymbol | NumberStyles.AllowDecimalPoint, CultureInfo.CreateSpecificCulture("en-US"), out var amount);
+            decimal.TryParse(rawAmount, NumberStyles.AllowCurrencySymbol | NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, CultureInfo.CreateSpecificCulture("en-US"), out var amount);
 
             logger.LogInformation("RawAccount: {RawAccount}; RawDate: {RawDate}, RawAmount: {RawAmount}", account, rawDate, rawAmount);
             logger.LogInformation("Last4: {Last4}; Payee: {Payee}, Date: {Date}, Amount: {Amount}", last4, payee, date, amount);

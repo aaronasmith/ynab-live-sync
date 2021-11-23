@@ -134,7 +134,7 @@ a[href^=tel] {
                                   <td align="left" style="vertical-align:top; padding: 20px 30px 28px;" class="moPad"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                                       <tr>
                                         <td align="left" style="vertical-align:top; padding: 0px 20px 0px 0px;"><img src="https://static.chasecdn.com/content/services/rendition/image.small.png/unified-assets/digital-cards/southwest-airlines/41473457001.png" width="57" height="auto" alt="" border="0" style="display:block;"/></td>
-                                        <td align="left" style="vertical-align:top; padding:0px 50px 0px 0px; font-family:Arial, Helvetica, sans-serif; font-size:30px; font-weight: bold; color:#414042;" class="zeroPad">You made a $10.00 transaction</td>
+                                        <td align="left" style="vertical-align:top; padding:0px 50px 0px 0px; font-family:Arial, Helvetica, sans-serif; font-size:30px; font-weight: bold; color:#414042;" class="zeroPad">You made a $3,212.00 transaction</td>
                                       </tr>
                                     </table></td>
                                 </tr>
@@ -166,7 +166,7 @@ a[href^=tel] {
                             <td align="left" style="vertical-align:top; padding: 10px 0px;border-bottom: solid 1px #414042;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                   <td align="left" style="vertical-align:top; padding:0px 0px 0px 0px; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#414042;" class="font14">Date</td>
-                                  <td align="right" style="vertical-align:top; padding:0px 0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#414042;" class="font14"><span class="applelinksgray41"><a style="color:#414042;text-decoration: none;">Jul 21, 2021 at 1:18 PM ET</td>
+                                  <td align="right" style="vertical-align:top; padding:0px 0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#414042;" class="font14"><span class="applelinksgray41"><a style="color:#414042;text-decoration: none;">Nov 18, 2021 at 3:20 PM ET</td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -174,7 +174,7 @@ a[href^=tel] {
                             <td align="left" style="vertical-align:top; padding: 10px 0px;border-bottom: solid 1px #414042;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                   <td align="left" style="vertical-align:top; padding:0px 0px 0px 0px; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#414042;" class="font14">Merchant</td>
-                                  <td align="right" style="vertical-align:top; padding:0px 0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#414042;" class="font14">WALMART.COM</td>
+                                  <td align="right" style="vertical-align:top; padding:0px 0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#414042;" class="font14">LARGE CHARGE</td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -182,14 +182,14 @@ a[href^=tel] {
                             <td align="left" style="vertical-align:top; padding: 10px 0px;border-bottom: solid 1px #414042;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                   <td align="left" style="vertical-align:top; padding:0px 0px 0px 0px; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#414042;" class="font14">Amount</td>
-                                  <td align="right" style="vertical-align:top; padding:0px 0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#414042;" class="font14">$12.41</td>
+                                  <td align="right" style="vertical-align:top; padding:0px 0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#414042;" class="font14">$3,919.99</td>
                                 </tr>
                               </table></td>
                           </tr>
                         </table></td>
                     </tr>
                     <tr>
-                        <td align="left" style="vertical-align:top; padding:40px 150px 40px 30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#414042;" class="moPad">You are receiving this alert because your transaction was more than the 0.00 level you set. You can visit our <a style="text-decoration: underline; color:#0060F0;" href="https://www.chase.com/personal/credit-cards/card-resource-center" rel="noopener noreferrer"  target="_blank">Resource Center</a> anytime to help answer your questions or manage your account.</td>
+                        <td align="left" style="vertical-align:top; padding:40px 150px 40px 30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#414042;" class="moPad">You are receiving this alert because your transaction was more than the $0.00 level you set. You can visit our <a style="text-decoration: underline; color:#0060F0;" href="https://www.chase.com/personal/credit-cards/card-resource-center" rel="noopener noreferrer"  target="_blank">Resource Center</a> anytime to help answer your questions or manage your account.</td>
                     </tr>
                     <tr>
                       <td align="left" style="padding:0px; vertical-align:top; padding: 0px 0px 30px 30px;" class="moPad"><table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="vertical-align:top;">
