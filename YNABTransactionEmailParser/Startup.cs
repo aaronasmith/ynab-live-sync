@@ -23,6 +23,7 @@ namespace YNABTransactionEmailParser
             services.AddSingleton<UsBankParser>();
             services.AddSingleton<RedCardParser>();
             services.AddSingleton<BankOfAmericaCreditCardParser>();
+            services.AddSingleton<VenmoParser>();
 
             services.AddSingleton<Func<string, IParser>>(services => (bank) => 
                 bank switch
@@ -31,6 +32,7 @@ namespace YNABTransactionEmailParser
                     "usbank" => services.GetService<UsBankParser>(),
                     "target" => services.GetService<RedCardParser>(),
                     "bankofamerica_creditcard" => services.GetService<BankOfAmericaCreditCardParser>(),
+                    "venmo" => services.GetService<VenmoParser>(),
                     _ => null
                 }
             );

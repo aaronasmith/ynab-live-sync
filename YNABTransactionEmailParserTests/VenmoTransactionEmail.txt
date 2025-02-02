@@ -1,0 +1,34 @@
+Mail Body: ---------- Forwarded message ---------
+From: Venmo Credit Card <ppv@servicing.synchrony.com>
+Date: Sat, Feb 1, 2025 at 8:17 PM
+Subject: You made a purchase with your Venmo Credit Card.
+To: <REDACTED@gmail.com>
+
+
+You made a purchase with your Venmo Credit Card.
+[image: Header]
+
+*You made a purchase with your Venmo Credit Card.*
+Hi REDACTED,
+We want to let you know a purchase was made for $21.74 on 02/01/2025 with
+your Venmo Credit Card.
+Here are the details.
+Purchase date *02/01/2025*
+Merchant info *A MERCHANT*
+Open the Venmo app to view your account.
+*Sign in now*
+<https://e.servicing.synchrony.com/click?REDACTED>
+Please don’t reply directly to this email because we’re not able to respond
+to account inquiries sent to this email.
+We’re always working on ways to help keep you informed about your account,
+including protecting it from identity theft. For more info about identity
+theft, visit the Federal Trade Commission’s (FTC) consumer website at
+www.identitytheft.gov
+<https://e.servicing.synchrony.com/click?REDACTED>.
+
+This email is delivered for the purpose of servicing your account. If you
+already opted out of marketing communications from us, those preferences
+don’t apply to this email.
+Venmo Credit Card is issued by Synchrony Bank. Venmo Credit Card is located at
+170 Election Road, Suite 125, Draper, Utah, 84020.
+[image: Footer]
