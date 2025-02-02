@@ -43,6 +43,9 @@ namespace YNABTransactionEmailParser
                 return;
             }
 
+            
+            context.Response.StatusCode = (int)HttpStatusCode.OK;
+
             // If there's a body, parse it as JSON and check for "message" field.
             using TextReader reader = new StreamReader(request.Body);
             string text = await reader.ReadToEndAsync();
@@ -60,7 +63,6 @@ namespace YNABTransactionEmailParser
                     if (parser == null)
                     {
                         _logger.LogError("Invalid bank submitted");
-                        context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                         return;
                     }
 
@@ -68,11 +70,9 @@ namespace YNABTransactionEmailParser
                     if (transaction == null)
                     {
                         _logger.LogError("Parse did not succeed for content: \"{content}\"", mailBody);
-                        context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                         return;
                     } else if (transaction.IgnoreTransaction) {
                         _logger.LogInformation("Ignoring transaction");
-                        context.Response.StatusCode = (int)HttpStatusCode.OK;
                         return;
                     }
 
