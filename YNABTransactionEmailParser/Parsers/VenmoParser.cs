@@ -30,6 +30,10 @@ namespace YNABTransactionEmailParser.Parsers
                 Last4 = configuration["VenmoLast4"],
                 Payee = match.Groups["Payee"].Value
             };
-        }        
+        }
+
+        public string GetEmail(Domain.Email.EmailMessage email){
+            return email.html;
+        }
     }
 }

@@ -54,11 +54,10 @@ namespace YNABTransactionEmailParser
                 try
                 {
                     var email = JsonSerializer.Deserialize<EmailMessage>(text);
-
-                    string mailBody = email.plain ?? email.html;
-                    _logger.LogInformation("Mail Body: {mailBody}", mailBody);
-
                     IParser parser = _parserFactory(bank);
+
+                    string mailBody = parser?.GetText(email) ?? email.plain ?? email.html;
+                    _logger.LogInformation("Mail Body: {mailBody}", mailBody);
 
                     if (parser == null)
                     {
