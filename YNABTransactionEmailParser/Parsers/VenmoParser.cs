@@ -13,8 +13,10 @@ namespace YNABTransactionEmailParser.Parsers
         private IConfiguration configuration;
 
         private static Regex regex = new Regex(@".*We want to let you know a purchase was made for \$(?<Amount>[\d\.]+)[^M]*Merchant info \*(?<Payee>[^\*]*)\*", RegexOptions.Compiled);
+        private readonly ILogger<VenmoParser> logger;
 
-        public VenmoParser(IConfiguration configuration){
+        public VenmoParser(IConfiguration configuration, ILogger<VenmoParser> logger){
+            this.logger = logger;
             this.configuration = configuration;
         }
 
@@ -33,6 +35,7 @@ namespace YNABTransactionEmailParser.Parsers
         }
 
         public string GetEmail(Domain.Email.EmailMessage email){
+            logger.LogInformation("Returning html email message");
             return email.html;
         }
     }
